@@ -23,12 +23,12 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 import numpy as np
 from torch import nn
-from CrossFormer import CrossFormer
+from model.CrossFormer import CrossFormer
 import warnings
 
 warnings.filterwarnings("ignore")
 import glob
-from modeling import VisionTransformer, VIT_CONFIGS
+from model.modeling import VisionTransformer, VIT_CONFIGS
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--path', default='./image', help='the path of image')

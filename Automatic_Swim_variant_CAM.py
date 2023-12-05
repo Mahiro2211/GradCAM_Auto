@@ -23,7 +23,7 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 import numpy as np
 from torch import nn
-from CrossFormer import CrossFormer
+from model.CrossFormer import CrossFormer
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -111,9 +111,9 @@ if __name__ == '__main__':
     t, _ = parser.parse_known_args()
 
     # -----Creat-Model----- (take CrossFormer as a example)
-    from crossFormer_args import get_config as get_configs
-    from crossFormer_args import parse_option
-    from CrossFormer import CrossFormer
+    from model.crossFormer_args import get_config as get_configs
+    from model.crossFormer_args import parse_option
+    from model.CrossFormer import CrossFormer
 
     _, config = parse_option()
     model = CrossFormer(

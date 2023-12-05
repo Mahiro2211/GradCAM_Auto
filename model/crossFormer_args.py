@@ -1,5 +1,5 @@
 import argparse
-from crossFormer_config import get_config
+from model.crossFormer_config import get_config
 def parse_option():
     parser = argparse.ArgumentParser('CrossFormer training and evaluation script', add_help=False)
     parser.add_argument('--cfg', type=str, default='configs/base_patch4_group7_224.yaml', metavar="FILE", help='path to config file', )
