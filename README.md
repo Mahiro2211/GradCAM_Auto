@@ -5,6 +5,7 @@ A GradCAM automatic script to visualize the model result
  </p>
  <p>The shape of the tensor may look like <em>[Batch,49,768]</em> then you should deal with your model with the following steps to avoid some terrible **RuntimeError**
  </p>
+ 
 ```python
 Class XXXFormer(nn.Moudle):
     def __init(self,...):
@@ -16,6 +17,7 @@ Class XXXFormer(nn.Moudle):
         x = self.avgpool(x.transpose(1,2)) # [Batch,49,768] --> [Batch,768,49] --> [Batch,768,1]
         x = torch.flatten(x,1) # [Batch,768]
 ```
+
 * Automatic_Swim_variant_CAM.py
 * Automatic_ViT_variant_CAM.py
  
