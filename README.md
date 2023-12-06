@@ -1,4 +1,4 @@
-# GradCAM_On_ViT_Variant
+# GradCAM_On_ViT
 A GradCAM automatic script to visualize the model result
 # How to adjust your XXXFormer in GradCam
 ## Please ensure that your model is in a proper format.
