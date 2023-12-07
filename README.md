@@ -32,8 +32,9 @@ target_Layer3 = [vit.block[-1].norm1,vit.block.norm2]
  ```
 ### Why do we choose LayerNorm as the target layer? Reference: On the Expressivity Role of LayerNorm in Transformer's Attention (ACL 2023).
 <p>The reason may be like this as shown in the picture</p>
-<p>![image](https://github.com/Mahiro2211/GradCAM_Automation/assets/130811701/eba4b15e-bda6-4f2d-b4b0-8999385f787f)
-</p>
+
+![image](https://github.com/Mahiro2211/GradCAM_Automation/assets/130811701/eba4b15e-bda6-4f2d-b4b0-8999385f787f)
+
 
 
 
