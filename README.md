@@ -42,4 +42,4 @@ just set up your image file and run these two scripts!!
 |Method|
 |-----|
 | CrossFormer(ICLR 2022) |
-| Vision Transformer (ICLR2021) |
+| Vision Transformer (ICLR 2021) |
