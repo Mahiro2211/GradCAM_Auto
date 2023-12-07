@@ -21,6 +21,15 @@ Class XXXFormer(nn.Moudle):
 ```
 ## Get Your Target Layer
 <p>Find your last transformer block and select the LayerNorm() attribute as your target layer if you have more than one LayerNorm() attribute you can get them all in a list or just select one of them</p>
+<p> Your target layer may look like</p>
+ 
+ ```python
+# choose one LayerNorm() attribute for your target layer
+target_Layer1 = [vit.block[-1].norm1]
+target_Layer2 = [vit.block[-1].norm2]
+# or stack up them all
+target_Layer3 = [vit.block[-1].norm1,vit.block.norm2]
+ ```
 
 * Automatic_Swim_variant_CAM.py
 * Automatic_ViT_variant_CAM.py
