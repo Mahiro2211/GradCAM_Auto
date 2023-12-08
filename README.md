@@ -50,6 +50,23 @@ just set up your image file and run these two scripts!!
 ![Result](https://github.com/Mahiro2211/GradCAM_Automation/assets/130811701/4fb5c2df-da8c-4748-9a28-7bf39f3d8b1b)
 
 
+### Param you need to Pay attention
+
+```python
+parser.add_argument('--path', default='./image', help='the path of image')
+parser.add_argument('--method', default='all', help='the method of GradCam can be specific ,default all')
+parser.add_argument('--aug_smooth', default=True, choices=[True, False],
+                    help='Apply test time augmentation to smooth the CAM')
+parser.add_argument('--use_cuda', default=True, choices=[True, False],
+                    help='if use GPU to compute')
+parser.add_argument(
+    '--eigen_smooth',
+    default=False, choices=[True, False],
+    help='Reduce noise by taking the first principle componenet'
+         'of cam_weights*activations')
+parser.add_argument('--modelname', default="ViT-B-16", help='Any name you want')
+```
+
 |Method|
 |-----|
 | CrossFormer (ICLR 2022) |
