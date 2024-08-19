@@ -1,4 +1,5 @@
 # GradCAM_On_ViT
+# 这是一个用于计算ViT及其变种模型的GradCAM自动脚本，可以自动处理批量的图像
 A GradCAM automatic script to visualize the model result
 # How to adjust your XXXFormer in GradCam
 ## Please ensure that your model is in a proper format.
