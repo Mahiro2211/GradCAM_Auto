@@ -110,7 +110,7 @@ if __name__ == '__main__':
 
     t, _ = parser.parse_known_args()
 
-    # -----Creat-Model----- (take CrossFormer as a example)
+    # -----Creat-Model----- (take CrossFormer as an example)
     from model.crossFormer_args import get_config as get_configs
     from model.crossFormer_args import parse_option
     from model.CrossFormer import CrossFormer
